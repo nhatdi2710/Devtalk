@@ -1,0 +1,15 @@
+/* Variables */
+:root {
+    /* Color */
+    --text-color: #424242;
+    --icon-color: #AD88C6;
+
+    /* Formating */
+    --default-spacing: 24px;
+}
+
+/* COMMON */
+body {
+    font-family: "Nunito", sans-serif;
+    color: var(--text-color);
+}
