@@ -14,3 +14,5 @@ Cài đặt Web Root:
 Phiên bản Bootstrap: v5.0.2
 
 Link lấy Icon: https://www.flaticon.com/
+
+Link lấy Mã Màu: https://colorhunt.co/palette/ffe6e6e1afd1ad88c67469b6
