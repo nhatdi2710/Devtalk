@@ -14,6 +14,6 @@
     
     <!-- CSS Customizing -->
     <style>
-        <?php require __DIR__ . '/../src/css/style.css'; ?>
+        <?php require __DIR__ . '/../../asset/css/style.css'; ?>
     </style>
 </head>
