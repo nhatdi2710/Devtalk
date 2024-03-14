@@ -2,7 +2,7 @@
 :root {
     /* Color */
     --text-color: #424242;
-    --icon-color: #AD88C6;
+    --icon-color: #B4B4B8;
 
     /* Formating */
     --default-spacing: 24px;
@@ -12,4 +12,10 @@
 body {
     font-family: "Nunito", sans-serif;
     color: var(--text-color);
+}
+
+/* Sidebar */
+#sidebar {
+    flex-direction: column;
+    width: 76px;
 }
