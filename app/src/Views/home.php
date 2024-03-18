@@ -12,9 +12,13 @@
     <!-- Sidebar -->
 <?php require __DIR__ . '/partials/sidebar.php' ?>
 
-    <!-- Main -->
-<main id="app">
-    <p>Hello</p>
+<!-- Main -->
+<main id="top">
+    <article id="app" class="container">
+        <?php require __DIR__ . '/partials/sub-header.php' ?>
+
+
+    </article>
 </main>
 
     <!-- Footer -->

@@ -2,10 +2,11 @@
 :root {
     /* Color */
     --text-color: #424242;
-    --icon-color: #B4B4B8;
 
     /* Formating */
     --default-spacing: 24px;
+    --mt: 40px;
+    --bo: 12px;
 }
 
 /* COMMON */
@@ -14,8 +15,57 @@ body {
     color: var(--text-color);
 }
 
-/* Sidebar */
-#sidebar {
-    flex-direction: column;
-    width: 76px;
+.nav-link {
+    color: #424242;
 }
+
+.nav-link:hover {
+    color: #C7C8CC;
+}
+
+    /* Sidebar */
+    #sidebar {
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+
+        height: 100%;
+
+        margin: 0;
+        padding: var(--default-spacing) 0;
+
+        background-color: #B4B4B8;
+        box-shadow: 2px 0 2px #D2D2D2;
+    }
+
+    .icon {
+        padding: 12px 0;
+    }
+    .icon:hover {
+        opacity: 0.8;
+    }
+
+    .tools {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Sub Header */
+    .sub-header {
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid #B4B4B8;
+    }
+
+    .log-sign {
+        display: flex;
+        justify-content: center;
+    }
+
+main {
+    margin-left: 72px;
+}
+/* --- */
+
+/* HOME PAGE */

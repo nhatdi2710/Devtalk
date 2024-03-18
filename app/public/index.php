@@ -6,6 +6,10 @@
         case '/':
         case '/home.php':
             require __DIR__ . '/../src/Views/home.php';
+            break;
+        case '/login.php':
+            require __DIR__ . '/../src/Views/sites/login.php';
+            break;
     }
 ?>
 
