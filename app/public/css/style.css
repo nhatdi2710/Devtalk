@@ -63,9 +63,33 @@ body {
         justify-content: center;
     }
 
+    /* Footer */
+    #footer {
+        background-color: #424242;
+    }
+
+    #to-top {
+        position: fixed;
+        bottom: 8%;
+        right: 4%;
+
+        z-index: 1;
+    }
+
+    #to-top button {
+        padding: 8px;
+        border: none;
+        border-radius: 50%;
+
+        background-color: #B4B4B8;
+    }
+
 main {
-    margin-left: 72px;
+    height: 1200px;
 }
 /* --- */
 
 /* HOME PAGE */
+.home-page {
+    margin-left: 72px;
+}

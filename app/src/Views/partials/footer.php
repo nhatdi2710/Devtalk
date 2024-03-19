@@ -1,32 +1,30 @@
-<footer class="footer bg-dark">
-    <div class="text-center p-2">
+<footer id="footer">
+    <div id="to-top">
+        <button>
+            <a href="#top"><img height="32px" src="/imgs/icons/to-top.png" alt=""></a>
+        </button>
+    </div>
+
+    <div class="p-2">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active text-decoration-none text-uppercase text-light" aria-current="page"
-                    href="app/public/index.php">Trang chủ</a>
+                <a class="nav-link text-decoration-none text-light" href="#">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-decoration-none text-uppercase text-light" href="#">Về chúng tôi</a>
+                <a class="nav-link text-decoration-none text-light" href="#">Terms & Privacy policy</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-decoration-none text-uppercase text-light" href="#">hỗ trợ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-decoration-none text-uppercase text-light" href="#">Điều khoản & Quy định</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-decoration-none text-uppercase text-light" href="#">Chính sách quyền riêng
-                    tư</a>
+                <a class="nav-link text-decoration-none text-light" href="#">Contact</a>
             </li>
         </ul>
+        
+        <p class="text-light text-center mt-3">Copyright &copy; 2024 Devty Talk</p>
     </div>
-      
-        <p class=' text-light text-center p-2' >Copyright &copy; 2024 Devty Talk</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-    </script>
+<!-- Script Session -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>
+    
+</script>
