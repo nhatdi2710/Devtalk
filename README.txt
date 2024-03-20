@@ -17,6 +17,7 @@ Link lấy Icon: https://www.flaticon.com/
 
 Link lấy Mã Màu: https://colorhunt.co/palette/ffe6e6e1afd1ad88c67469b6
 
-NOTE:
+? NOTE:
     - Sd thư viện gregwar/captcha của Packagist để tạo chuỗi Captcha cho trang login.php
     - Sd phpdotenv
+    - Format của kiểu dữ liệu Date: YYYY-MM-DD

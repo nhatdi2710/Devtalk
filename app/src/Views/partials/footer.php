@@ -1,10 +1,4 @@
 <footer id="footer">
-    <div id="to-top">
-        <button>
-            <a href="#top"><img height="32px" src="/imgs/icons/to-top.png" alt=""></a>
-        </button>
-    </div>
-
     <div class="p-2">
         <ul class="nav justify-content-center">
             <li class="nav-item">

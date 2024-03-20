@@ -68,22 +68,6 @@ body {
         background-color: #424242;
     }
 
-    #to-top {
-        position: fixed;
-        bottom: 8%;
-        right: 4%;
-
-        z-index: 1;
-    }
-
-    #to-top button {
-        padding: 8px;
-        border: none;
-        border-radius: 50%;
-
-        background-color: #B4B4B8;
-    }
-
 main {
     height: 1200px;
 }

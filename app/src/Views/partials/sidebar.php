@@ -4,11 +4,11 @@
     </div>
 
     <div class="col-lg-4 tools">
-        <a href="#" class="icon">
+        <a href="#newest" class="icon">
             <img height="32px" src="/imgs/icons/newest.png" alt="newest">
         </a>
 
-        <a href="#" class="icon">
+        <a href="#trending" class="icon">
             <img height="32px" src="/imgs/icons/trending.png" alt="trending">
         </a>
     </div>
