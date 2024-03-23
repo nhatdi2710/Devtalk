@@ -10,7 +10,7 @@
 <body>
 
 <!-- Main -->
-<main id="top" class="home-page">
+<main id="top" class="login-page">
     <article id="app" class="container">
         <!-- Sub-Header -->
         <?php require __DIR__ . '/../partials/sub-header.php' ?>
