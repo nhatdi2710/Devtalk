@@ -7,14 +7,18 @@
 	box-sizing: border-box;
 }
 
+main {
+  height: fit-content;
+}
+
 body, html {
 	height: 100%;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Nunito", sans-serif;;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Nunito", sans-serif;;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -100,6 +104,14 @@ iframe {
   color: #666666;
 }
 
+.text-center {text-align: center;}
+
+.p-t-12 {padding-top: 12px;}
+
+.p-t-136 {padding-top: 136px;}
+
+.m-l-5{margin-left: 5px;}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
@@ -162,7 +174,7 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;;
   font-size: 30px;
   font-weight: bold;
   color: #434343;
@@ -184,7 +196,7 @@ iframe {
 }
 
 .input100 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;;
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -260,7 +272,7 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;;
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -325,12 +337,3 @@ iframe {
   }
 }
 
-
-/*------------------------------------------------------------------*/
-.text-center {text-align: center;}
-
-.p-t-12 {padding-top: 12px;}
-
-.p-t-136 {padding-top: 136px;}
-
-.m-l-5{margin-left: 5px;}
