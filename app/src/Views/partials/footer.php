@@ -1,18 +1,24 @@
 <footer id="footer">
-    <div class="p-2">
-        <ul class="nav justify-content-center">
+    <div class="p-1">
+        <ul class="nav justify-content-center p-1">
             <li class="nav-item">
-                <a class="nav-link text-decoration-none text-light" href="#">About Us</a>
+                <a class="nav-link text-decoration-none text-light" href="#">
+                    <img src="/imgs/icons/facebook.png" alt="">
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-decoration-none text-light" href="#">Terms & Privacy policy</a>
+                <a class="nav-link text-decoration-none text-light" href="#">
+                    <img src="/imgs/icons/instagram.png" alt="">
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-decoration-none text-light" href="#">Contact</a>
+                <a class="nav-link text-decoration-none text-light" href="#">
+                    <img src="/imgs/icons/twitter.png" alt="">
+                </a>
             </li>
         </ul>
         
-        <p class="text-light text-center mt-3">Copyright &copy; 2024 Devty Talk</p>
+        <p class="text-light text-center mt-2">Copyright &copy; 2024 Devty Talk</p>
     </div>
 </footer>
 

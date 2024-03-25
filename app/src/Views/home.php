@@ -31,7 +31,7 @@
                 </section>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <h5>.Filter</h5>
             </div>
         </div>
