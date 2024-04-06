@@ -17,6 +17,16 @@
             http_response_code(404);
             break;
     }
-?>
 
-<!-- E -->
+    // session_start();
+    // require_once __DIR__ . '/../../vendor/autoload.php';
+    
+    // require_once __DIR__ . '/../src/routes/login.php';
+
+    // use Bramus\Router\Router;
+
+    // $router = new Router();
+    // $router = login_routes($router);
+
+    // $router->run();
+?>

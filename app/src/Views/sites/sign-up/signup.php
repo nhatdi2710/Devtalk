@@ -89,9 +89,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <p class='error'><?php echo $email_err?></p>
                             </div>
 
-                            <div style="width: 284px;" class="wrap-input validate-input mt-4">
-                                    <input class="input" type="date" id="date" name="date">
+                            <div class="wrap-input validate-input mt-4">
+                                    <input style="width: 284px;" class="input" type="date" id="date" name="date">
                                     <span class="focus-input"></span>
+                            </div>
+
+                            <div class="row wrap-input validate-input mt-4 gender">
+                                <span class="gender__label">Gender:</span>
+
+                                <span class="mt-2">
+                                    <label for="male">
+                                        <img height="16px" src="/imgs/icons/male.png" alt="Male gender">
+                                    </label>
+                                    <input type="radio" name="gender" id="male"  value="1" checked>
+                                </span>
+
+                                <span class="mt-2">
+                                    <label for="female">
+                                        <img height="18px" src="/imgs/icons/female.png" alt="Female gender">
+                                    </label>
+                                    <input type="radio" name="gender" id="female" value="0">
+                                </span>
+
                             </div>
 
                             <div class="wrap-input validate-input mt-4">
@@ -102,22 +121,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     </span>
                                     <p class='error'><?php echo $username_err?></p>
                                 </div>
-                                
-                                <!-- <div class="validate-input">
-                                        <span class='gender-label'>Gender:</span>
-                                        <span>
-                                            <label for="male">
-                                                <img src="/imgs/icons/male-gender.png" alt="Male gender">
-                                            </label>
-                                            <input type="radio" name="gender" id="male"  value="Male" checked>
-                                        </span>
-                                        <span>
-                                            <label for="male">
-                                                <img src="/imgs/icons/female-gender.png" alt="Female gender">
-                                            </label>
-                                            <input type="radio" name="gender" id="female" value="Female">
-                                        </span>
-                                </div> -->
         
                                 <div class="wrap-input validate-input mt-4">
                                     <input class="input" type="password" id='password' name="password" placeholder="Password">

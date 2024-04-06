@@ -1,45 +1,76 @@
+-- [author]: Ndi
 create database DevTalk;
 use DevTalk;
 
+# Table Account_Type
+-- [author]: Ndi
+create table Account_type (
+	type_name varchar(20) primary key
+)engine = InnoDB;
+
+insert into account_type(type_name) values ('admin');
+insert into account_type(type_name) values ('user');
+
 #Table User
-create table Users (
-	id int(10) unsigned auto_increment primary key,
-    name varchar(255) not null,
+-- [author]: Ndi
+create table Accounts (
+    nick_name varchar(255) not null,
     gender tinyint(1),
     birthday date,
     avatar varchar(255) default "default-avatar.png",
-    username varchar(20) not null,
-    pass blob unique
+    username varchar(20) primary key,
+    pass blob unique,
+    type_name varchar(20) not null,
+    
+    foreign key (type_name) references account_type(type_name)
 )engine = InnoDB;
 
 #Table Hashtag
+-- [author]: Ndi
 create table Hashtag (
-	topic varchar(50) primary key,
+	hashtag_name varchar(50) primary key,
     favorite_level int default 1
 );
 
+insert into Hashtag(hashtag_name) values ('Food');
+insert into Hashtag(hashtag_name) values ('Sport');
+insert into Hashtag(hashtag_name) values ('Q&A');
+
 #Table Posts
+-- [author]: Ndi
 create table Posts (
-	post_seq int(10) primary key,
+	post_id int(10) primary key,
     date_post timestamp not null default current_timestamp,
     content text not null,
-    id int(10) unsigned auto_increment,
-    topic varchar(50),
+    username varchar(20),
+    hashtag_name varchar(50),
     
-    foreign key (id) references users(id),
-    foreign key (topic) references hashtag(topic)
+    foreign key (username) references accounts(username),
+    foreign key (hashtag_name) references hashtag(hashtag_name)
 )engine = InnoDB;
 
 #Table Comments
+-- [author]: Ndi
 create table Comments (
-	content_seq int(10),
+	content_id int(10),
 	comment_content text not null,
-    id int(10) unsigned auto_increment,
+    username varchar(20),
     post_seq int(10),
     
-    foreign key (id) references users(id),
+    foreign key (username) references accounts(username),
     foreign key	(post_seq) references posts(post_seq),
-    primary key (content_seq, id, post_seq)
+    primary key (content_seq, username, post_seq)
 )engine = InnoDB;
 
-#Table Favorite -> for Favorite Tab
+#Table Hashtag_Posts
+-- [author]: Ndi
+create table Hashtag_Post (
+    hashtag_name varchar(50),
+    post_id int,
+    
+	foreign key (hashtag_name) references Hashtag(hashtag_name),
+    foreign key (post_id) references Posts(post_id),
+    primary key (hashtag_name, post_id)
+)engine = InnoDB;
+
+-- -- -- -- --

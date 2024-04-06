@@ -17,6 +17,8 @@ Link lấy Icon: https://www.flaticon.com/
 
 Link lấy Mã Màu: https://colorhunt.co/palette/ffe6e6e1afd1ad88c67469b6
 
+Link lấy Emojis Code trong HTML: https://www.w3schools.com/charsets/ref_emoji_smileys.asp
+
 ? NOTE:
     - Sd phpdotenv
     - Giải thích class validate-input
