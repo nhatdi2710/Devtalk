@@ -3,31 +3,51 @@ create database devtalk;
 use devTtlk;
 delimiter $$
 
--- table users
-create table users (
-	username varchar(50) primary key,
-    user_fullname varchar(255) not null,
-    user_gender tinyint(1),
-    user_birthday date,
-    user_avatar varchar(255) default "default-avatar.png",
-    user_password blob unique
-    user_role tinyint default 0
+drop database Devtalk;
+# Table Account_Type
+-- [author]: Ndi
+create table roles (
+	rol_user varchar(20) primary key
 )engine = InnoDB;
 
--- table hashtags
-create table hashtag (
-    hashtag_id int auto_increment primary key,
-	hashtag_topic varchar(50),
-    hashtag_favorite_level int default 1
+insert into account_type(type_name) values ('admin');
+insert into account_type(type_name) values ('user');
+
+#Table User
+-- [author]: Ndi
+create table users (
+    nick_name varchar(255) not null,
+    gender tinyint(1) default 1,
+    birthday date,
+    avatar varchar(255) default "default-avatar.png",
+    username varchar(20) primary key,
+    pass blob unique,
+    role_user varchar(20) not null,
+    
+    foreign key (type_name) references account_type(type_name)
+)engine = InnoDB;
+
+#Table Hashtag
+-- [author]: Ndi
+create table Hashtag (
+	hashtag_name varchar(50) primary key,
+    favorite_level int default 1
 );
 
--- table posts
-create table posts (
-	post_id int auto_increment primary key,
-    post_time timestamp not null default current_timestamp,
-    post_content text not null,
-    username varchar(50),
-    hashtag_id int,
+insert into Hashtag(hashtag_name) values ('Food');
+insert into Hashtag(hashtag_name) values ('Sport');
+insert into Hashtag(hashtag_name) values ('Q&A');
+
+#Table Posts
+-- [author]: Ndi
+create table Posts (
+	post_id int(10) primary key,
+    date_post timestamp not null default current_timestamp,
+    content text not null,
+    like_number int default 0,
+    username varchar(20),
+    hashtag_name varchar(50),
+>>>>>>> 5f003db189bda4c5b419507a5febfcab761a292b
     
     foreign key (username) references users(iusername),
     foreign key (hashtag_id) references hashtag(hashtag_id)
