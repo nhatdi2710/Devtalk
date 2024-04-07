@@ -17,12 +17,15 @@ Link lấy Icon: https://www.flaticon.com/
 
 Link lấy Mã Màu: https://colorhunt.co/palette/ffe6e6e1afd1ad88c67469b6
 
+<<<<<<< HEAD
+Link lấy Emojis Code trong HTML: https://www.w3schools.com/charsets/ref_emoji_smileys.asp
+
 Gợi ý commit: [type]: summary in present tense 
     - type: chore (thay đổi code nhưng không liên quan trực tiếp đến chức năng của mã nguồn), 
             feat (thêm chức năng mới cho mã nguồn)
             style (sửa lỗi style)
     - summary in present tense : tóm tắt nội dung commit
-    
+
 ? NOTE:
     - Sd phpdotenv
     - Giải thích class validate-input (Trả lời: tui định làm validate cho input nhưng đã bỏ, quên xóa trước khi push)

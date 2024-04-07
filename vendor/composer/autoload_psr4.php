@@ -14,4 +14,5 @@ return array(
     'Gregwar\\' => array($vendorDir . '/gregwar/captcha/src/Gregwar'),
     'GrahamCampbell\\ResultType\\' => array($vendorDir . '/graham-campbell/result-type/src'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
+    'App\\' => array($baseDir . '/app/src/classes'),
 );
