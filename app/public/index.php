@@ -13,6 +13,9 @@
         case '/signup.php':
             require __DIR__ . '/../src/Views/sites/sign-up/signup.php';
                 break;
+        case '/profile.php':
+            require __DIR__ . '/../src/Views/sites/profile.php';
+                break;
         default:
             http_response_code(404);
             break;

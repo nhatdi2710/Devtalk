@@ -3,9 +3,17 @@
         <img src="/imgs/devtalk-logo--text.png" alt="logo" height="70px">
     </a>
 
+    <!-- Tạo hộp thoại tìm kiếm và có nút là icon tìm kiếm nằm trong phần tìm kiếm để submit -->
     <div class="col-lg-4">
         <form action="/search.php/?q=">
-            <input class="form-control" type="text" name="q" placeholder="Search here...">
+            <div class="input-group">
+                <input class="form-control" type="text" name="q" placeholder="Search here...">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
         </form>
     </div>
 
