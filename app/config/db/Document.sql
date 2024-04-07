@@ -2,10 +2,11 @@
 create database DevTalk;
 use DevTalk;
 
+drop database Devtalk;
 # Table Account_Type
 -- [author]: Ndi
-create table Account_type (
-	type_name varchar(20) primary key
+create table roles (
+	rol_user varchar(20) primary key
 )engine = InnoDB;
 
 insert into account_type(type_name) values ('admin');
@@ -13,14 +14,14 @@ insert into account_type(type_name) values ('user');
 
 #Table User
 -- [author]: Ndi
-create table Accounts (
+create table users (
     nick_name varchar(255) not null,
-    gender tinyint(1),
+    gender tinyint(1) default 1,
     birthday date,
     avatar varchar(255) default "default-avatar.png",
     username varchar(20) primary key,
     pass blob unique,
-    type_name varchar(20) not null,
+    role_user varchar(20) not null,
     
     foreign key (type_name) references account_type(type_name)
 )engine = InnoDB;
@@ -42,6 +43,7 @@ create table Posts (
 	post_id int(10) primary key,
     date_post timestamp not null default current_timestamp,
     content text not null,
+    like_number int default 0,
     username varchar(20),
     hashtag_name varchar(50),
     
